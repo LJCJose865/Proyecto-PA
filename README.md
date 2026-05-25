@@ -1,6 +1,6 @@
 ## RULETA RUSA
 En el repositorio encontramos un unico codigo el cual su función es la del conocido juego de la Ruleta Rusa.
-El codigo se encuentra en el apartado: rc/main/java/com/mycompany/proyecto/pa
+El codigo y la explicación del proyecto se encuentra en el apartado: rc/main/java/com/mycompany/proyecto/pa
 ## Authors
 - [@LJCJose865](https://github.com/LJCJose865)
 - [@AlejandroBon37](https://github.com/AlejandroBon37)
