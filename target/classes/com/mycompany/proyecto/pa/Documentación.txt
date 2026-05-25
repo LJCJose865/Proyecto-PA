@@ -1,0 +1,51 @@
+Integrandes del Grupo 
+Jose David Perez
+Katalina Fajardo
+Alejandro Bonilla
+Daniel Ortiz 
+Nicolas Correa
+
+//----------Ruleta Rusa----------//
+
+Introducción:
+Este es un algoritmo sobre un juego de ruleta rusa el cual le vamos a explicar como es que funciona describiendo las funciones echas en este codigo.
+
+1.librerias: Utilizamos Scanner para poder leer los datos de entrada desde la consola y Random para generar numeros aleatorios.
+
+Metodos:
+    Static in posicionBala: este esta declarado globalmente pra guadar la posición de la bala en el tambor del arma.
+
+    public static cargarRevolver: contiene una funacio, masbien un llamado para activar la libreria random
+    y asi generar un numero aleatorio entre 1 y 6, con el cula significa que el numero elegdo por la libreria random determina la posición en donde se encuentra
+    la bala en el revolver.
+
+    public Static boolean disparar: este metodo simula el disparo denerando otra pocición aleatoria, lo hace con la función
+    int disparo = rand.nextInt(); Lo que hace esta función es generar un numeron entre 1 y y 6. C on lo cual si la posicion de la bala coincide con la posicionBala el jugador 
+    pierde.
+
+    Public static void jugar: es el metodo mas robusto debido a que almasena las funciones principales para que funcione el codigo de la ruleta,
+    se utiliza para solicitar el numero de jugadores a participar (minimo 2 maximo 6), los nombres de los jugadores (los cuales soin guardados en una lista), llama al metodo cargarRevolver con
+    lo cual se prepara para el inicio del juego, y principalmente usa la función While y for:
+    
+    Función for del metodo jugar: se usa para recorrer la lista en la cual se almacenan los nombres de los jugadores, y asi poder obtener el nombre del este.
+    Función while del metodo jugar: la utilizamos junto a una función boolean( verdadero o falso) juegoActivado para repetir los turnos hasta que alguien pierda y en cada turno en consola se muestra:
+    Nombre del jugador
+    Esperamos a que presione enter
+    llamamos el metodo disparar
+    y Si devuelve true el jugador pierde y este termina.
+    Si devuelve false (falso) pasa al siguiente jugador.
+
+    public static mostrarMenu: enresumudas cuentas se usa para mostrar el menu del juego y sus 3 elementos, los cuales son 1, Jugar, 2.Ver las reglas del juego (asi es tiene reglas), 3.Salir (para salir de la consola).
+    A demas vuelve a usar la funcion while para repetir el menu hasta que el jugador elija salir.
+
+    Función try-catch: se utiliza para manejar exepciones, para evitar que el usuario tire el sistema 
+    si este ingresa los datos erroneamente.
+
+    Funciones en el main:
+    Aqui solo esta el llamado de las funciones para nop tener que poner todo en el main, y estas son:
+
+    Scanner sc = new Scanner(System.in); para poder leer la informacion de entrada.
+    Random rand = new Random(); para generar los numeros aleatorios.
+    mostrarMenu();para iniciar la ruleta rusa.
+    sc.closed(); es de buna practica de programacion cerrar el Scanner.
+

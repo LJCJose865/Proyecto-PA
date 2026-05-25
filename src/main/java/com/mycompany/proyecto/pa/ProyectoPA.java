@@ -4,8 +4,11 @@ import java.util.Scanner;
 import java.util.Random;
 
 /**
- *
- * @author josep
+ *@author KatalinaFajardo
+ * @author joseperez
+ * @author NicolasCorrea 
+ * @author DanielOrtiz
+ * @author AlejandroBonilla.
  */
 public class ProyectoPA {
     //esta es para declarar una variable global que guarde la posicion de la bala en el tambor del artma (Revolver).
