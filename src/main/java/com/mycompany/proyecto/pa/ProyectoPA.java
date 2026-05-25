@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.proyecto.pa;
 //Importamos las librerias necesarias para el proyecto
 import java.util.Scanner;
