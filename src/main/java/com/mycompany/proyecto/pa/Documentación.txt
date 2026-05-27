@@ -45,7 +45,63 @@ Metodos:
     Aqui solo esta el llamado de las funciones para nop tener que poner todo en el main, y estas son:
 
     Scanner sc = new Scanner(System.in); para poder leer la informacion de entrada.
+
     Random rand = new Random(); para generar los numeros aleatorios.
     mostrarMenu();para iniciar la ruleta rusa.
     sc.closed(); es de buna practica de programacion cerrar el Scanner.
 
+
+
+PSeudocodigo del Juego Ruleta rusa
+INICIO programa RuletaRusa
+ 
+    IMPORTAR Scanner
+    IMPORTAR Random
+ 
+    MÉTODO main:
+        CREAR objeto Scanner
+        CREAR objeto Random
+ 
+        MOSTRAR "Bienvenido al juego de Ruleta Rusa"
+        PEDIR número de jugadores
+        CREAR array de jugadores con ese tamaño
+ 
+        PARA i desde 0 hasta número de jugadores-1:
+            PEDIR nombre del jugador
+            GUARDAR en array
+ 
+        LLAMAR método cargarRevolver()
+ 
+        VARIABLE turno = 0
+        VARIABLE juegoActivo = true
+ 
+        MIENTRAS juegoActivo sea true:
+            jugadorActual = jugadores[turno]
+ 
+            MOSTRAR "Turno de " + jugadorActual
+            MOSTRAR "Presiona Enter para disparar"
+            ESPERAR entrada del usuario
+ 
+            SI disparar() devuelve true:
+                MOSTRAR jugadorActual + " ha perdido"
+                juegoActivo = false
+            SINO:
+                MOSTRAR "¡Sobreviviste!"
+                turno = (turno + 1) % númeroDeJugadores
+ 
+        MOSTRAR "Fin del juego"
+ 
+    MÉTODO cargarRevolver():
+        CREAR array tambor[6]
+        POSICIÓN aleatoria = Random entre 0 y 5
+        tambor[posición] = bala
+        RETORNAR tambor
+ 
+    MÉTODO disparar():
+        GENERAR número aleatorio entre 0 y 5
+        SI número == posiciónDeLaBala:
+            RETORNAR true (jugador muere)
+        SINO:
+            RETORNAR false (jugador sobrevive)
+ 
+FIN programa
