@@ -61,7 +61,7 @@ public class ProyectoPA {
             }
             System.out.println("Gracias por jugar!");
         } catch(Exception e){
-            System.out.println("Error entrada invalida. Porfavor intenta de neuvo :)");
+            System.out.println("Error entrada invalida. Porfavor intenta de nuevo :)");
             sc.nextLine(); //limpia el scanner en caso de error.
         }
     }
