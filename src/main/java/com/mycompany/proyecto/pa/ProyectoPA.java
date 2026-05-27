@@ -52,7 +52,7 @@ public class ProyectoPA {
                 sc.nextLine(); //para que el jugador solo presione enter para disparar.
     
                 if(disparar(rand)){
-                    System.out.println("¡TAN!*******:O" + jugadorActual + " ha perdido.");
+                    System.out.println("¡TAN!*******:O " + jugadorActual + " ha perdido.");
                     juegoActivado = false; //finaliza el juego si uno de los jugadores pierde.
                 }else{
                     System.out.println("CLICK! Sobreviviste!");
