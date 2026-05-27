@@ -5,7 +5,7 @@ import java.util.Random;
 
 /**
  *@author KatalinaFajardo
- * @author joseperez
+ * @author JosePerez
  * @author NicolasCorrea 
  * @author DanielOrtiz
  * @author AlejandroBonilla.
@@ -26,7 +26,7 @@ public class ProyectoPA {
 
     //para solicitar el numero de jugadores, nombres, en resumen tiene todo lo necesario para iniciar el juego.
     public static void jugar(Scanner sc, Random rand){
-        System.out.println("beinvenido a la Ruleta Rusa.");
+        System.out.println("Bienvenido a la Ruleta Rusa.");
         try{
 
             //para averiguar cuantos van a jugar, limite 6.
